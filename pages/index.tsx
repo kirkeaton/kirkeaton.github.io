@@ -24,19 +24,27 @@ const MobileMenu = () => (
       <FiMenu />
     </MenuButton>
     <MenuList>
-      <MenuItem as="a" href="https://github.com/kirkeaton" target="_blank">
+      <MenuItem
+        as="a"
+        href={process.env.NEXT_PUBLIC_GITHUB_URL}
+        target="_blank"
+      >
         <Icon as={IoLogoGithub} marginRight="0.5rem" />
         GitHub
       </MenuItem>
       <MenuItem
         as="a"
-        href="https://www.linkedin.com/in/kirk-eaton/"
+        href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
         target="_blank"
       >
         <Icon as={IoLogoLinkedin} marginRight="0.5rem" />
         LinkedIn
       </MenuItem>
-      <MenuItem as="a" href="mailto:kirk.eaton@gmail.com" target="_blank">
+      <MenuItem
+        as="a"
+        href={process.env.NEXT_PUBLIC_CONTACT_URL}
+        target="_blank"
+      >
         <Icon as={IoMdMail} marginRight="0.5rem" />
         Contact
       </MenuItem>
@@ -48,7 +56,7 @@ const DesktopMenu = () => (
   <ButtonGroup isAttached>
     <Button
       as="a"
-      href="https://github.com/kirkeaton"
+      href={process.env.NEXT_PUBLIC_GITHUB_URL}
       leftIcon={<IoLogoGithub />}
       target="_blank"
     >
@@ -57,7 +65,7 @@ const DesktopMenu = () => (
 
     <Button
       as="a"
-      href="https://www.linkedin.com/in/kirk-eaton/"
+      href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
       leftIcon={<IoLogoLinkedin />}
       target="_blank"
     >
@@ -66,7 +74,7 @@ const DesktopMenu = () => (
 
     <Button
       as="a"
-      href="mailto:kirk.eaton@gmail.com"
+      href={process.env.NEXT_PUBLIC_CONTACT_URL}
       leftIcon={<IoMdMail />}
       target="_blank"
     >
