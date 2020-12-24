@@ -149,7 +149,7 @@ const Home = () => (
       />
     </Head>
 
-    <Box minW="md" maxW="6xl" mx="auto" pt={4} px={8}>
+    <Box maxW="6xl" mx="auto" pt={4} px={8}>
       <Stack alignItems="center" isInline justifyContent="space-between">
         <Heading>Kirk Eaton</Heading>
 
@@ -163,7 +163,7 @@ const Home = () => (
       </Stack>
     </Box>
 
-    <Box minWidth="md" maxW="6xl" mx="auto" px={8}>
+    <Box maxW="6xl" mx="auto" px={8}>
       <Box className="about">
         <Heading py={4} size="lg">
           About Me
@@ -231,7 +231,7 @@ const Home = () => (
       </Box>
     </Box>
 
-    <Center minWidth="md" maxW="6xl" mx="auto" py={4} px={8}>
+    <Center maxW="6xl" mx="auto" py={4} px={8}>
       Copyright &#169; 2020 Kirk Eaton
     </Center>
   </>
