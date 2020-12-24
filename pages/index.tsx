@@ -130,7 +130,7 @@ const Home = () => (
       </Stack>
     </Box>
 
-    <Box minWidth="md" maxW="6xl" mx="auto" pt={4} px={8}>
+    <Box minWidth="md" maxW="6xl" mx="auto" px={8}>
       <Box className="about">
         <Heading py={4} size="lg">
           About Me
