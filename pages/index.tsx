@@ -147,6 +147,26 @@ const Home = () => (
         name="twitter:description"
         content={process.env.NEXT_PUBLIC_META_DESCRIPTION}
       />
+
+      {/* gtag.js for Google Analytics */}
+      {process.env.VERCEL_ENV === 'production' && (
+        <>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+              `,
+            }}
+          ></script>
+        </>
+      )}
     </Head>
 
     <Box maxW="6xl" mx="auto" pt={4} px={8}>
