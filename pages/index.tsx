@@ -6,6 +6,7 @@ import {
   Center,
   Heading,
   Icon,
+  Link,
   Menu,
   MenuButton,
   MenuItem,
@@ -165,17 +166,24 @@ const Home = () => (
 
     <Box maxW="6xl" mx="auto" px={8}>
       <Box className="about">
-        <Heading py={4} size="lg">
+        <Heading pt={4} size="lg">
           About Me
         </Heading>
 
-        <Text fontWeight="light">
+        <Text fontWeight="light" pt={4}>
           Experienced{' '}
           <Text as="span" fontWeight="bold">
             Software Engineer
           </Text>{' '}
           with a demonstrated history of shipping efficient &amp; reliable
           software.
+        </Text>
+
+        <Text fontWeight="semi-bold" pt={4}>
+          My work experience can be found in my{' '}
+          <Link href="/resume.pdf" fontWeight="bold">
+            resume
+          </Link>
         </Text>
       </Box>
 
