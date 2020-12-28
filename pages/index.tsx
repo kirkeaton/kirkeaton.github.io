@@ -181,7 +181,7 @@ const Home = () => (
 
         <Text fontWeight="semi-bold" pt={4}>
           My work experience can be found in my{' '}
-          <Link href="/resume.pdf" fontWeight="bold">
+          <Link href="/resume.pdf" fontWeight="bold" target="_blank">
             resume
           </Link>
         </Text>
