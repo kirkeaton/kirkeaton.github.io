@@ -198,9 +198,23 @@ const Home = () => (
           spacing="1rem"
         >
           <GridBox
+            title="Skiz Parser"
+            description="Library that parses .skiz files exported from Ski Tracks."
+            url="https://github.com/kirkeaton/skiz-parser"
+            isAuthor
+          />
+
+          <GridBox
             title="Particle Setup"
             description="Library that sends commands to Particle devices."
             url="https://github.com/kirkeaton/particle_setup"
+            isAuthor
+          />
+
+          <GridBox
+            title="Sudoku Image Solver"
+            description="Program that processes and solves Sudoku puzzles."
+            url="https://github.com/kirkeaton/sudoku-image-solver"
             isAuthor
           />
 
@@ -212,10 +226,9 @@ const Home = () => (
           />
 
           <GridBox
-            title="Sudoku Image Solver"
-            description="Program that processes and solves Sudoku puzzles."
-            url="https://github.com/kirkeaton/sudoku-image-solver"
-            isAuthor
+            title="Express OAS Generator"
+            description="Express middleware that automatically generates OpenAPI specification."
+            url="https://github.com/mpashkovskiy/express-oas-generator"
           />
 
           <GridBox
@@ -240,7 +253,7 @@ const Home = () => (
     </Box>
 
     <Center maxW="6xl" mx="auto" py={4} px={8}>
-      Copyright &#169; 2020 Kirk Eaton
+      Copyright &#169; 2021 Kirk Eaton
     </Center>
   </>
 );
