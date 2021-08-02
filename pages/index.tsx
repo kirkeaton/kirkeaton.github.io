@@ -188,7 +188,7 @@ const Home = () => (
       </Box>
 
       <Box className="projects">
-        <Heading py={4} size="lg">
+        <Heading pt={4} size="lg">
           Projects &amp; Contributions
         </Heading>
 
@@ -196,6 +196,7 @@ const Home = () => (
           justifyContent="center"
           minChildWidth="20rem"
           spacing="1rem"
+          pt={4}
         >
           <GridBox
             title="Skiz Parser"
@@ -252,7 +253,7 @@ const Home = () => (
       </Box>
     </Box>
 
-    <Center maxW="6xl" mx="auto" py={4} px={8}>
+    <Center maxW="6xl" mx="auto" pt={4} px={8}>
       Copyright &#169; 2021 Kirk Eaton
     </Center>
   </>
