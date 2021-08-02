@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prepare": "husky install",
     "start": "next start"
   },
   "dependencies": {
@@ -24,11 +25,6 @@
     "lint-staged": "^11.0.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{ts,tsx,json,md}": "prettier --write"
