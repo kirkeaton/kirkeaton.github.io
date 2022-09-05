@@ -27,6 +27,7 @@ const MobileMenu = () => (
     <MenuList>
       <MenuItem
         as="a"
+        hidden={!process.env.NEXT_PUBLIC_GITHUB_URL}
         href={process.env.NEXT_PUBLIC_GITHUB_URL}
         target="_blank"
       >
@@ -35,6 +36,7 @@ const MobileMenu = () => (
       </MenuItem>
       <MenuItem
         as="a"
+        hidden={!process.env.NEXT_PUBLIC_LINKEDIN_URL}
         href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
         target="_blank"
       >
@@ -43,6 +45,7 @@ const MobileMenu = () => (
       </MenuItem>
       <MenuItem
         as="a"
+        hidden={!process.env.NEXT_PUBLIC_CONTACT_URL}
         href={process.env.NEXT_PUBLIC_CONTACT_URL}
         target="_blank"
       >
@@ -57,6 +60,7 @@ const DesktopMenu = () => (
   <ButtonGroup isAttached>
     <Button
       as="a"
+      hidden={!process.env.NEXT_PUBLIC_GITHUB_URL}
       href={process.env.NEXT_PUBLIC_GITHUB_URL}
       leftIcon={<IoLogoGithub />}
       target="_blank"
@@ -66,6 +70,7 @@ const DesktopMenu = () => (
 
     <Button
       as="a"
+      hidden={!process.env.NEXT_PUBLIC_LINKEDIN_URL}
       href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
       leftIcon={<IoLogoLinkedin />}
       target="_blank"
@@ -75,6 +80,7 @@ const DesktopMenu = () => (
 
     <Button
       as="a"
+      hidden={!process.env.NEXT_PUBLIC_CONTACT_URL}
       href={process.env.NEXT_PUBLIC_CONTACT_URL}
       leftIcon={<IoMdMail />}
       target="_blank"
