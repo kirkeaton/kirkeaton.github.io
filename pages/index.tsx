@@ -195,7 +195,7 @@ const Home = () => (
 
       <Box className="projects">
         <Heading pt={4} size="lg">
-          Projects &amp; Contributions
+          Projects
         </Heading>
 
         <SimpleGrid
@@ -205,55 +205,38 @@ const Home = () => (
           pt={4}
         >
           <GridBox
-            title="Skiz Parser"
+            title="@piste-icons/react"
+            description="React components for ski trail difficulty symbols."
+            url="https://github.com/kirkeaton/piste-icons-react"
+            isAuthor
+          />
+
+          <GridBox
+            title="@piste-icons/svg"
+            description="SVGs for ski trail difficulty symbols."
+            url="https://github.com/kirkeaton/piste-icons-svg"
+            isAuthor
+          />
+
+          <GridBox
+            title="skiz-parser"
             description="Library that parses .skiz files exported from Ski Tracks."
             url="https://github.com/kirkeaton/skiz-parser"
             isAuthor
           />
 
           <GridBox
-            title="Particle Setup"
-            description="Library that sends commands to Particle devices."
-            url="https://github.com/kirkeaton/particle_setup"
-            isAuthor
-          />
-
-          <GridBox
-            title="Sudoku Image Solver"
-            description="Program that processes and solves Sudoku puzzles."
-            url="https://github.com/kirkeaton/sudoku-image-solver"
-            isAuthor
-          />
-
-          <GridBox
-            title="Read Pubspec"
+            title="read-pubspec"
             description="Library that reads a pubspec.yaml file."
             url="https://github.com/kirkeaton/read-pubspec"
             isAuthor
           />
 
           <GridBox
-            title="Express OAS Generator"
-            description="Express middleware that automatically generates OpenAPI specification."
-            url="https://github.com/mpashkovskiy/express-oas-generator"
-          />
-
-          <GridBox
-            title="Mongoose History"
-            description="Plugin that keeps a history of all changes of a document."
-            url="https://github.com/nassor/mongoose-history"
-          />
-
-          <GridBox
-            title="Flutter Circular Slider"
-            description="Customizable circular slider for Flutter."
-            url="https://github.com/davidanaya/flutter-circular-slider"
-          />
-
-          <GridBox
-            title="FOAM Framework"
-            description="Modeling tool and class based object system."
-            url="https://github.com/foam-framework/foam2"
+            title="particle_setup"
+            description="Library that sends commands to Particle devices."
+            url="https://github.com/kirkeaton/particle_setup"
+            isAuthor
           />
         </SimpleGrid>
       </Box>
