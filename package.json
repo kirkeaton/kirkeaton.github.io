@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "18.15.11",
-    "@types/react": "18.0.28",
+    "@types/react": "18.0.31",
     "husky": "8.0.1",
     "lint-staged": "13.2.0",
     "prettier": "2.8.4",
