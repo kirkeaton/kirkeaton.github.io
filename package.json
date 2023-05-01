@@ -23,7 +23,7 @@
     "@types/react": "18.0.31",
     "husky": "8.0.1",
     "lint-staged": "13.2.0",
-    "prettier": "2.8.4",
+    "prettier": "2.8.8",
     "typescript": "5.0.3"
   },
   "lint-staged": {
