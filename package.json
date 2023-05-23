@@ -1,38 +1,16 @@
 {
   "name": "kirkeaton.ca",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
+  "dependencies": {
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "license": "BSD-3-Clause",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prepare": "husky install",
     "start": "next start"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "2.5.5",
-    "@emotion/react": "11.10.6",
-    "@emotion/styled": "11.10.6",
-    "framer-motion": "10.10.0",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "4.8.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.31",
-    "husky": "8.0.1",
-    "lint-staged": "13.2.0",
-    "prettier": "2.8.4",
-    "typescript": "5.0.3"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,json,md}": "prettier --write"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5"
   }
 }
