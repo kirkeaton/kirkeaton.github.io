@@ -1,0 +1,31 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: auto;
+  padding: 32px;
+  max-width: 640px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  margin: 16px 0;
+}
+h2 {
+  margin: 8px 0;
+}
+h3 {
+  margin: 4px 0;
+}
+header > h2 {
+  font-weight: 300;
+}
+.projects > h1 {
+  font-size: 2em;
+}
+.project {
+  margin: 24px 0;
+}
