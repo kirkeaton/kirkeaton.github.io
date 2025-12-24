@@ -11,6 +11,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a.inline {
+  text-decoration: underline;
+}
 h1,
 h2,
 h3,
