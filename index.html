@@ -37,22 +37,14 @@
 
       gtag('config', 'G-E5YBC72JLH');
     </script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script>
-      const fontLoader = new Worker("font-loader.js");
-      fontLoader.onmessage = (event) => {
-        const { buffer, family, status } = event.data;
-        if (status === "success") {
-          const font = new FontFace(family, buffer, {
-            weight: "300 400",
-            style: "normal",
-          });
-          document.fonts.add(font);
-          document.body.style.fontFamily = `"${family}", sans-serif`;
-        }
-      };
-      fontLoader.postMessage("load");
-    </script>
+    <!-- Fonts -->
+    <link
+      rel="preload"
+      as="font"
+      href="ibm-plex-sans.woff2"
+      type="font/woff2"
+    />
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
