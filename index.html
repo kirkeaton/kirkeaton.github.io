@@ -1,19 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Partytown -->
+    <script>
+      partytown = {
+        forward: ["dataLayer.push"],
+      };
+    </script>
+    <script src="./~partytown/partytown.js" />
     <!-- Google tag (gtag.js) -->
     <script
-      async
+      type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-E5YBC72JLH"
     ></script>
-    <script>
+    <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-E5YBC72JLH");
+      gtag('config', 'G-E5YBC72JLH');
     </script>
     <meta charset="utf-8" />
     <meta
