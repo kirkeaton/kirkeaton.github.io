@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Page meta -->
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Experienced Software Developer with a demonstrated history of shipping efficient &amp; reliable software."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kirk Eaton</title>
     <!-- Partytown -->
     <script>
       partytown = {
@@ -27,16 +36,23 @@
 
       gtag("config", "G-E5YBC72JLH");
     </script>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kirk Eaton</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
+    <script>
+      const fontLoader = new Worker("font-loader.js");
+      fontLoader.onmessage = (event) => {
+        const { buffer, family, status } = event.data;
+        if (status === "success") {
+          const font = new FontFace(family, buffer, {
+            weight: "300 400",
+            style: "normal",
+          });
+          document.fonts.add(font);
+          document.body.style.fontFamily = `"${family}", sans-serif`;
+        }
+      };
+      fontLoader.postMessage("load");
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
